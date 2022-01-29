@@ -1,0 +1,35 @@
+.header-background {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-logo {
+  height: 30px;
+  width: 80px;
+}
+.header-moon {
+  background-color: transparent;
+  border-style: none;
+  margin-left: 20px;
+}
+
+.header-profile {
+  color: #3b82f6;
+
+  margin-left: 20px;
+}
+
+.header-logoout {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #3b82f6;
+  font-family: 'Roboto';
+  color: #3b82f6;
+  font-weight: bold;
+  margin-left: 20px;
+  border-radius: 5px;
+}

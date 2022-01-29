@@ -1,0 +1,72 @@
+.menu-icon {
+  margin-right: 5px;
+}
+.menu {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+.contact-head {
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: bold;
+}
+.contact-container {
+  padding: 5px;
+}
+.social-icon {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.banner-button {
+  background-color: transparent;
+  border-style: solid;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.banner-para {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.getit-container {
+  padding: 20px;
+  width: 250px;
+}
+.close-icon {
+  height: 30px;
+  width: 30px;
+}
+.loader-container {
+  width: 80vw;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+.video-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+.final {
+  padding: 20px;
+}

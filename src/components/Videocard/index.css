@@ -1,0 +1,32 @@
+.video-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  /* background-color: #ffffff; */
+  margin: 10px;
+  text-decoration: none;
+}
+.video-card-text-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  /* align-items: center; */
+}
+.video-category {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.thumbnail-image {
+  margin-bottom: 10px;
+}
+/* .title-container{
+    font-family:"Roboto";
+    font-weight:bold;
+    color:
+} */
+.viewcount-container {
+  display: flex;
+  flex-direction: row;
+}

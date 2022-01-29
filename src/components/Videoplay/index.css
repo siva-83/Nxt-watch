@@ -1,0 +1,43 @@
+.like-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: blue; */
+  width: 50vw;
+  font-family: 'Roboto';
+}
+
+.like-container {
+  display: flex;
+  flex-direction: row;
+}
+.line {
+  color: black;
+  height: 2px;
+  width: 75vw;
+}
+.like-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.profile-image {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+.subscriber-container {
+  display: flex;
+  flex-direction: row;
+}
+.below-video {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.responsive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}

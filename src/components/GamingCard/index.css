@@ -1,0 +1,14 @@
+.game-head {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 10px;
+}
+.game-image {
+  height: 80%;
+  width: 100%;
+}
+.game-card2 {
+  margin: 10px;
+  width: 15vw;
+  height: 30vw;
+}
