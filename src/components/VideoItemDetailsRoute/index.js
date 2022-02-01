@@ -2,7 +2,7 @@ import './index.css'
 import {Link} from 'react-router-dom'
 import {Title} from './styledComponents'
 
-const Videocard = props => {
+const VideoItemDetailsRoute = props => {
   const {eachItem, mode, id} = props
   const wantedObj = {
     id: eachItem.id,
@@ -35,4 +35,4 @@ const Videocard = props => {
   )
   //   console.log(eachItem)
 }
-export default Videocard
+export default VideoItemDetailsRoute

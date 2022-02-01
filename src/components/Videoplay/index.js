@@ -84,14 +84,14 @@ class Videoplay extends Component {
                           {result.video_details.published_at}
                         </p>
                         <LikeContainer b={mode}>
-                          <p className="like-icon">
+                          <button className="like-icon">
                             <AiOutlineLike /> Like
-                          </p>
-                          <p className="like-icon">
+                          </button>
+                          <button className="like-icon">
                             <AiOutlineDislike /> Dislike
-                          </p>
+                          </button>
                           <button onClick={addsavedFun}>
-                            <RiPlayListAddFill />
+                            <RiPlayListAddFill /> Save
                           </button>
                         </LikeContainer>
                       </LikeIconContainer>

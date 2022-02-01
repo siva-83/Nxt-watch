@@ -14,6 +14,16 @@ export const ContentMenu = styled.p`
   padding: 5px;
   font-size: 12px;
 `
+
+export const ContentMen = styled.h1`
+  font-family: 'Roboto';
+  color: ${props => (props.l ? ' #1e293b' : '#ffffff')};
+  padding: 10px;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+`
+
 export const MenuContainer = styled.div`
   width: 15vw;
   display: flex;
@@ -33,7 +43,7 @@ export const BannerContainer = styled.div`
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png ');
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;

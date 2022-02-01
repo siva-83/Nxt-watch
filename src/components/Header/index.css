@@ -19,7 +19,8 @@
 
 .header-profile {
   color: #3b82f6;
-
+  width: 20px;
+  height: 20px;
   margin-left: 20px;
 }
 
@@ -32,4 +33,36 @@
   font-weight: bold;
   margin-left: 20px;
   border-radius: 5px;
+}
+.cancel-button {
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.cancel-sub {
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin: 10px;
+  border-style: solid;
+  border-color: #3b82f6;
+  border-radius: 5px;
+  background-color: #3b82f6;
+}
+.popup-cont {
+  background-color: #475569;
+  width: 100 rew;
+  height: 100 reh;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+.popup-para {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 10px;
 }

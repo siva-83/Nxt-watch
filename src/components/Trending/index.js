@@ -52,29 +52,31 @@ class Trending extends Component {
             <Final>
               <Header />
               <MaincontainerOfTrending>
-                <Menu />
-                <Trend o={mode}>
+                <Menu id="trending" />
+                <Trend o={mode} data-testid="trending">
                   <Head p={mode}>
                     <HiFire className="icon-fire" />
                     Trending
                   </Head>
-                  {loadd ? (
-                    Data.map(eachItem => (
-                      <TrendingVideosCard
-                        id={eachItem.id}
-                        eachItem={eachItem}
-                      />
-                    ))
-                  ) : (
-                    <div className="loader-container" data-testid="loader">
-                      <Loader
-                        type="ThreeDots"
-                        color="#3b82f6"
-                        height="50"
-                        width="50"
-                      />
-                    </div>
-                  )}
+                  <ul className="trend-list-container-1">
+                    {loadd ? (
+                      Data.map(eachItem => (
+                        <TrendingVideosCard
+                          id={eachItem.id}
+                          eachItem={eachItem}
+                        />
+                      ))
+                    ) : (
+                      <div className="loader-container" data-testid="loader">
+                        <Loader
+                          type="ThreeDots"
+                          color="#3b82f6"
+                          height="50"
+                          width="50"
+                        />
+                      </div>
+                    )}
+                  </ul>
                 </Trend>
               </MaincontainerOfTrending>
             </Final>

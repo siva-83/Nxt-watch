@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import {MainContainer, LoginCard} from './StyledComponents'
 import './index.css'
@@ -12,11 +13,11 @@ class Login extends Component {
     error: '',
   }
 
-  successLogin = jwtToken => {
-    Cookies.set('nxt_watch', jwtToken, {expires: 30})
-    const {history} = this.props
-    history.replace('/')
-  }
+  //   successLogin = jwtToken => {
+  //     Cookies.set('jwt_token', jwtToken, {expires: 30})
+  //     const {history} = this.props
+  //     history.replace('/')
+  //   }
 
   failedLogin = msg => {
     console.log('heee', msg)
@@ -40,7 +41,9 @@ class Login extends Component {
     const data = await response.json()
     console.log(data)
     if (response.ok === true) {
-      this.successLogin(data.jwt_token)
+      Cookies.set('jwt_token', data.jwtToken, {expires: 30})
+      const {history} = this.props
+      history.replace('/')
     } else {
       console.log('heyyyy', data.error_msg)
       this.failedLogin(data.error_msg)
@@ -64,6 +67,10 @@ class Login extends Component {
     console.log(this.state)
     const {user, password, showstatus, loginStatus, error} = this.state
     console.log(showstatus)
+    const jwtToken = Cookies.get('nxt-watch')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <MainContainer onSubmit={this.loginFun}>
         <LoginCard>
@@ -71,6 +78,7 @@ class Login extends Component {
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
               className="login-logo"
+              alt="website logo"
             />
           </div>
           <div className="label-container">

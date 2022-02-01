@@ -11,7 +11,11 @@ const TrendingVideosCard = props => (
       return (
         <Link to={`/videos/${id}`} className="video-card-container">
           <Trend o={mode}>
-            <img src={eachItem.thumbnail_url} className="tumb" />
+            <img
+              src={eachItem.thumbnail_url}
+              className="tumb"
+              alt="video thumbnail"
+            />
             <div>
               <TitleHead p={mode}>{eachItem.title}</TitleHead>
               <Title p={mode}>{eachItem.channel.name}</Title>

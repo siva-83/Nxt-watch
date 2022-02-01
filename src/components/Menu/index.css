@@ -1,3 +1,15 @@
 .link-container {
   text-decoration: none;
 }
+.test {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 5px;
+}
+.contact-container {
+  list-style-type: none;
+}
+.menu-icon1 {
+  color: #ff0b37;
+  margin-right: 5px;
+}

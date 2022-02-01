@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <MainContainer>
         <Header />
-        <Content />
+        <Content data-testid="home" />
       </MainContainer>
     )
   }

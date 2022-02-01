@@ -8,7 +8,7 @@ export const Trend = styled.div`
   overflow: auto;
   height: 90vh;
   width: 85vw;
-  background-color: ${props => (props.o ? '#ffffff' : '#181818')};
+  background-color: ${props => (props.o ? '#ffffff' : '#0f0f0f')};
 `
 export const Head = styled.h1`
   font-family: 'Roboto';

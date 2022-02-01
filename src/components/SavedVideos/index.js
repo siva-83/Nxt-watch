@@ -13,20 +13,35 @@ class SavedVideos extends Component {
         {value => {
           const {mode, savedVideos} = value
           console.log('heyyyyyyyyyyyyyyyy', savedVideos)
+          const len = savedVideos.length
           return (
-            <div>
+            <div className="for-test">
               <Header />
               <MaincontainerOfTrending>
-                <Menu />
-                <Trend o={mode}>
+                <Menu id="savedvideos" />
+                <Trend o={mode} data-testid="savedVideos">
                   {/* <Head p={mode}>
                     <HiFire className="icon-fire" />
                     Trending
                   </Head> */}
 
-                  {savedVideos.map(eachItem => (
-                    <TrendingVideosCard id={eachItem.id} eachItem={eachItem} />
-                  ))}
+                  {len > 0 ? (
+                    <>
+                      {savedVideos.map(eachItem => (
+                        <TrendingVideosCard
+                          id={eachItem.id}
+                          eachItem={eachItem}
+                          data-testid="savedVideos"
+                        />
+                      ))}
+                    </>
+                  ) : (
+                    <img
+                      src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png "
+                      className="no-saved-image"
+                      alt="no saved videos"
+                    />
+                  )}
                 </Trend>
               </MaincontainerOfTrending>
             </div>

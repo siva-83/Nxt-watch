@@ -4,7 +4,7 @@ import {Switch, Route} from 'react-router-dom'
 import Login from './components/Login'
 import Home from './components/Home'
 import SavedVideos from './components/SavedVideos'
-import Gaming from './components/Gaming'
+import GamingRoute from './components/GamingRoute'
 import Trending from './components/Trending'
 import Videoplay from './components/Videoplay'
 import WatchContext from './context/WatchContext'
@@ -36,6 +36,13 @@ class App extends Component {
       this.setState(prevState => ({
         savedVideos: updated,
       }))
+    } else {
+      const updated = savedVideos.filter(
+        eachEle => eachEle.id !== result.video_details.id,
+      )
+      this.setState(prevState => ({
+        savedVideos: updated,
+      }))
     }
   }
 
@@ -57,8 +64,12 @@ class App extends Component {
             <ProtectedRoute exact path="/" component={Home} />
             <ProtectedRoute exact path="/videos/:id" component={Videoplay} />
             <ProtectedRoute exact path="/trending" component={Trending} />
-            <ProtectedRoute exact path="/gaming" component={Gaming} />
-            <ProtectedRoute exact path="/savedVideos" component={SavedVideos} />
+            <ProtectedRoute exact path="/gaming" component={GamingRoute} />
+            <ProtectedRoute
+              exact
+              path="/saved-videos"
+              component={SavedVideos}
+            />
           </WatchContext.Provider>
         </Switch>
       </div>
